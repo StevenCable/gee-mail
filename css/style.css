@@ -1,0 +1,74 @@
+body{
+
+background-image: url("/assets/ignasi_pattern_s.png");
+}
+
+#letter{
+
+	color: red;
+	text-shadow: 3px blue;
+
+}
+.bodyText{
+	color: black;
+	margin: 1em;
+	font-style: italic;
+	background-image: url("/assets/crinkledPaper.png");
+	background-image: 100%;
+
+}
+.sender{
+	font-size: 20px;
+	font-weight: bold;
+	color: navy;
+	border-style: double;
+	border-width: 3px;
+	border-color: black;
+}
+.subject{
+	font-weight: bold;
+	display: inline;
+	width: 50%;
+	height: 30px;
+	border-bottom: dotted 2px;
+
+}
+
+.date{
+	float:right;
+	font-size: 8px;
+}
+
+#sidebar{
+
+	float: left;
+	width: 15%;
+	height: 70%;
+	/* background-image: url("/assets/hardwoodSlat.png"); */
+	position: fixed;
+	/* background:
+	linear-gradient(to top right, #00ced6, lightblue); */
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 3px;
+	box-shadow: 4px 6px 8px blur blue;
+
+}
+#count{
+
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 30px;
+
+
+}
+
+#displayErrthang{
+	float:right;
+	width: 80%;
+	height: 100%;
+
+}
+
+.emailWrapper{
+	border-style:solid 3px;
+}

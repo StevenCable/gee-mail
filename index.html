@@ -2,17 +2,148 @@
 	<head>
 		<script src="js/mail-generator.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
     <script>
       window.onload = function(){
+
+      	var pageLoad = window.geemails;   
+      	/*console.log(pageLoad); */  
+      	/*var displayDate = ;*/
+
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all /*HTML has been downloaded to your browser
+        for (var i = 0; i < pageLoad.length; i++) {
+    
+         
+        var emailBox = document.createElement('div');
+       	emailBox.className = "emailWrapper";
+       	displayErrthang.appendChild(emailBox);
+       	emailBox.addEventListener('click',toggleEmail);
+        	     
+        var getSender = document.createElement('div');
+        getSender.className = "sender";
+        getSender.innerHTML = pageLoad[i].sender;
+        emailBox.appendChild(getSender);
+
+        var getSubject = document.createElement('div');
+        getSubject.className = "subject";
+        getSubject.innerHTML = pageLoad[i].subject;
+        emailBox.appendChild(getSubject);
+
+        var getDate = document.createElement('div');
+        getDate.className = "date";
+       getDate.innerHTML = pageLoad[i].date;
+       emailBox.appendChild(getDate);
+
+       	var getBody = document.createElement('div');
+       	getBody.className = "bodyText";
+       	getBody.innerHTML = pageLoad[i].body;
+       	emailBox.appendChild(getBody);
+       	getBody.style.display = "none";	
+
+
+       	 }
+
+       /*	var counter = document.getElementById("sidebar");*/
+      	count.innerHTML = "New Shit: " + geemails.length;
+      	/*sidebar.appendChild(counter);*/
+
+       	function newEmail(){
+       	geemails.length++;
+       	count.innerHTML = "New Shit: " + geemails.length;
+
+       	var emailBox = document.createElement('div');
+       	emailBox.className = "emailWrapper";
+       	displayErrthang.appendChild(emailBox);
+       	emailBox.addEventListener('click',toggleEmail);
+
+       	var getNewSender = document.createElement('div');
+        getNewSender.className = "sender";
+        getNewSender.innerHTML = getNewMessage().sender;
+        emailBox.appendChild(getNewSender);
+
+        var getNewSubject = document.createElement('div');
+        getNewSubject.className = "subject";
+        getNewSubject.innerHTML = getNewMessage().subject;
+        emailBox.appendChild(getNewSubject);
+
+        var getNewDate = document.createElement('div');
+        getNewDate.className = "date";
+       	getNewDate.innerHTML = getNewMessage().date;
+       	emailBox.appendChild(getNewDate);	
+
+       	var getNewBody = document.createElement('div');
+       	getNewBody.className = "bodyText";
+       	getNewBody.innerHTML = getNewMessage().body;
+       	emailBox.appendChild(getNewBody);
+       	getNewBody.style.display = "none";	
+
+      	displayErrthang.insertBefore(emailBox, displayErrthang.childNodes[0]);
+
+
+      	/*var counter = document.getElementById("sidebar");*/
+      	
+
+       	}
+
+       	
+var startStop = true;
+if (startStop === true){
+       	setInterval(newEmail, 5000);
+       }
+
+
+
+       	
+       /*	var emailList = document.getElementsByClassName("emailWrapper");
+
+       	for (var j = 0; j < emailList.length; j++) {
+       		emailList[j].addEventListener('click',toggleEmail);
+       	}*/
+
+       	function toggleEmail(){
+       		var clickBody = this.querySelectorAll(".bodyText")[0];
+      		if(clickBody.style.display === 'none'){
+      			clickBody.style.display = 'block';
+      		}
+      		else{
+      			clickBody.style.display = 'none';
+      		}
+
+
+      }
+
+      
+
+
+
+
+
         
+      /*  var getSubject = ;
+*/
       };
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
-			Build Me!
+			<h1><span id ="letter">G</span>ee-<span id="letter">M</span>eezy <span id="letter">F</span>abreezy</h1>
+			
+			<div id="sidebar">
+				<div id="count">
+					
+				</div>
+
+				
+
+
+				</div>
+			<div id=displayErrthang>
+
+				
+			
+
+			</div>	
 		</div>
 	</body>
 </html>
