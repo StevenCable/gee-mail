@@ -3,6 +3,7 @@
 		<script src="js/mail-generator.js"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
 		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+		<link rel="SHORTCUT ICON" HREF="assets/CatGoggles.ico">
     <script>
       window.onload = function(){
 
@@ -44,13 +45,13 @@
 
        	 }
 
-       /*	var counter = document.getElementById("sidebar");*/
-      	count.innerHTML = "New Shit: " + geemails.length;
-      	/*sidebar.appendChild(counter);*/
+       
+      	count.innerHTML = geemails.length;
+      	
 
        	function newEmail(){
        	geemails.length++;
-       	count.innerHTML = "New Shit: " + geemails.length;
+       	count.innerHTML = geemails.length;
 
        	var emailBox = document.createElement('div');
        	emailBox.className = "emailWrapper";
@@ -79,9 +80,6 @@
        	getNewBody.style.display = "none";	
 
       	displayErrthang.insertBefore(emailBox, displayErrthang.childNodes[0]);
-
-
-      	/*var counter = document.getElementById("sidebar");*/
       	
 
        	}
@@ -91,15 +89,18 @@ var startStop = true;
 if (startStop === true){
        	setInterval(newEmail, 5000);
        }
+       function getSpam(){
+
+       	var spamMusubi= document.getElementById("spam");
+       spam.innerHTML = 1 + spam.innerHTML++;
+
+       }
+
+       setInterval(getSpam, 6969);
+       
 
 
 
-       	
-       /*	var emailList = document.getElementsByClassName("emailWrapper");
-
-       	for (var j = 0; j < emailList.length; j++) {
-       		emailList[j].addEventListener('click',toggleEmail);
-       	}*/
 
        	function toggleEmail(){
        		var clickBody = this.querySelectorAll(".bodyText")[0];
@@ -115,23 +116,55 @@ if (startStop === true){
 
       
 
-
-
-
-
-        
-      /*  var getSubject = ;
-*/
-      };
+       
+       };
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
+			<div id="mainHead"><span id="g">G</span><span id="m">M</span><span id="ee">ee</span><spa id="z">z</span><span id="y">y</span></div>
 			<h1><span id ="letter">G</span>ee-<span id="letter">M</span>eezy <span id="letter">F</span>abreezy</h1>
 			
 			<div id="sidebar">
+			<button class="button">New Shit</button>
+				<div class="newShit">
 				<div id="count">
+				
 					
+				</div>
+				
+				</div>
+				<button class="button">Spam(musubi)</button>
+				<div class="newShit">
+				<div id="spam">
+					
+
+				</div>
+
+				</div>
+				<button class="button">Cent</button>
+				<div class="newShit">
+				<div id="cent">
+					
+
+				</div>
+
+				</div>
+				<button class="button">Junk</button>
+				<div class="newShit">
+				<div id="junk">
+					
+
+				</div>
+
+				</div>
+				<button class="button">Settings</button>
+				<div class="settingsContainer">
+				<div id="settings">
+					
+
+				</div>
+
 				</div>
 
 				

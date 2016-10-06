@@ -1,12 +1,58 @@
 body{
 
-background-image: url("/assets/ignasi_pattern_s.png");
+background-image: url("/assets/ignasi_pattern_s.png");background-color:
+  } 
+#mainHead{
+	border-radius: 3px;
+	box-shadow: 2px 3px 6px grey;
+	/* text-align: center; */
+	height: 10%;
+	border: none;
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 200%;
+	text-indent: 15px;
+	padding-top: 15px;
+	position: relative;
+
+}
+#g{
+	color: red;
+	text-shadow: -6px 3px 5px indigo;
+	font-style: solid black;
+
+}
+#m{ color: orange;
+	text-shadow: -4px 3px 5px indigo;
+
+}
+#ee{
+	color: yellow;
+	text-shadow: 0px 3px 5px indigo;
+
+}
+#z{
+	color: green;
+	text-shadow: 4px 3px 5px indigo;
+
+}
+#y{
+	color: blue;
+	text-shadow: 6px 3px 5px indigo;
+
+}
+
+h1{
+	float:left;
+	position: fixed;
+	text-decoration: wrap;
+	width: 15%;
+	text-align: center;
 }
 
 #letter{
 
 	color: red;
-	text-shadow: 3px blue;
+	text-shadow: 3px 3px 2px grey;
 
 }
 .bodyText{
@@ -24,6 +70,7 @@ background-image: url("/assets/ignasi_pattern_s.png");
 	border-style: double;
 	border-width: 3px;
 	border-color: black;
+	background: white;
 }
 .subject{
 	font-weight: bold;
@@ -31,6 +78,10 @@ background-image: url("/assets/ignasi_pattern_s.png");
 	width: 50%;
 	height: 30px;
 	border-bottom: dotted 2px;
+	border-left: solid;
+	border-width: 2px;
+	background:;
+
 
 }
 
@@ -42,33 +93,120 @@ background-image: url("/assets/ignasi_pattern_s.png");
 #sidebar{
 
 	float: left;
+	margin-top: 9%;
 	width: 15%;
 	height: 70%;
 	/* background-image: url("/assets/hardwoodSlat.png"); */
 	position: fixed;
 	/* background:
 	linear-gradient(to top right, #00ced6, lightblue); */
+
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 3px;
-	box-shadow: 4px 6px 8px blur blue;
+	box-shadow: 4px 6px 8px #F9690E;
 
 }
 #count{
 
 	font-family: 'Baloo Bhai', cursive;
 	font-size: 30px;
+	text-align: center;
 
-
+	
+}
+#count:hover{
+	text-shadow: 2px 2px 2px;
+	
 }
 
 #displayErrthang{
 	float:right;
 	width: 80%;
 	height: 100%;
+	margin-top: 3%;
 
 }
 
 .emailWrapper{
-	border-style:solid 3px;
+	border-style:solid;
+	border-width: 2px;
+	border-opacity: .4;
+	margin: 1%;
+}
+
+.newShit{
+	border-radius: 3px;
+	box-shadow: 2px 3px 6px grey;
+	text-align: center;
+	height: 18.5%;
+	border: none;
+	
+
+}
+
+.newShit:hover{
+	box-shadow: 5px 6px 12px grey;
+	background: #F9690E;
+	opacity: .8;
+
+}
+
+.settingsContainer{
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: 2px 3px 6px grey;
+	text-align: center;
+	height: 6.5%;
+	border: none;
+}
+.settingsContainer:hover{
+	box-shadow: 5px 6px 12px grey;
+	background: #F9690E;
+	opacity: .8;
+}
+.button{
+	font-color: white;
+	font-weight: bold;
+	background: #F62459;
+	border: none;
+	box-shadow: 2px 3px 6px grey;
+	width: 100%;
+}
+.button:hover{
+box-shadow: 5px 6px 12px grey;
+}
+
+#spam{
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+#spam:hover{
+	text-shadow: 2px 2px 2px;
+}
+#cent{
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+#cent:hover{
+	text-shadow: 2px 2px 2px;
+}
+#junk{
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+#junk:hover{
+	text-shadow: 2px 2px 2px;
+}
+#settings{
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+#settings:hover{
+	text-shadow: 2px 2px 2px;
+
 }
